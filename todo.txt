@@ -1,4 +1,4 @@
-Installation
+Installation(this process is those who want to build project from scrach or want to see how project setted up :))
 
 $ mkdir fullstack-express-typescript
 $ cd fullstack-express.typescript
