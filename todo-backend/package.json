@@ -3,17 +3,17 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "build": "npx tsc",
-        "dev": "concurrently \"nodemon index.js\" \"npx tsc --watch\"",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon --watch './' --ext ts --exec npx ts-node index.ts"
     },
     "keywords": [],
-    "author": "Arif Hossain",
+    "author": "",
     "license": "ISC",
     "description": "",
     "dependencies": {
         "cors": "^2.8.5",
         "express": "^5.1.0",
+        "sequelize": "^6.37.7",
         "sqlite": "^5.1.1",
         "sqlite3": "^5.1.7"
     },
@@ -23,6 +23,7 @@
         "@types/node": "^22.15.3",
         "concurrently": "^9.1.2",
         "nodemon": "^3.1.10",
+        "ts-node": "^10.9.2",
         "typescript": "^5.8.3"
     }
 }

@@ -1,0 +1,44 @@
+Installation
+
+$ mkdir fullstack-express-typescript
+$ cd fullstack-express.typescript
+$ mkdir todo-backend
+$ mkdir todo-frontend
+
+
+Frontend:
+
+$ cd todo-frontend
+$ npm create vite@latest .
+$ npm install
+$ npm run dev
+$
+$
+
+Backend:
+$ cd todo-backend
+$ salite> .open database.sqlite
+$ npm init -y
+$ npm install cors express sqlite sqlite3
+$ npm install --save-dev \
+  @types/cors \
+  @types/express \
+  @types/node \
+  concurrently \
+  nodemon \
+  typescript
+$ npx tsc --init # Skapar tsconfig.json
+$ echo node_modules >> .gitignore
+$ echo "*.js" >> .gitignore
+$
+$ npm run dev
+
+** additionally i had to added exactly this so `npm run dev` workes at backend
+
+`
+ "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon --watch './' --ext ts --exec npx ts-node index.ts"
+    }
+
+`
