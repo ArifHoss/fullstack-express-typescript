@@ -9,6 +9,10 @@ const Task = sequelize.define('Task', {
     completed: {
         type: DataTypes.BOOLEAN,
         defaultValue: false
+    },
+    archived: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
     }
 });
 
